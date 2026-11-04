@@ -1,0 +1,24 @@
+{
+    "name": "tuvo/module-auto-add-to-cart",
+    "description": "Magento 2 module: fill the cart from a checkout link (?products=SKU:qty,...) and land the shopper on checkout. Works with Meta / Facebook Shops 'checkout on website' links.",
+    "type": "magento2-module",
+    "license": "MIT",
+    "require": {
+        "php": "~7.2.0||~7.3.0||~7.4.0||~8.1.0||~8.2.0||~8.3.0",
+        "magento/framework": "^102.0||^103.0",
+        "magento/module-catalog": "*",
+        "magento/module-catalog-inventory": "*",
+        "magento/module-checkout": "*",
+        "magento/module-configurable-product": "*",
+        "magento/module-quote": "*",
+        "magento/module-store": "*"
+    },
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "TuVo\\AutoAddToCart\\": ""
+        }
+    }
+}
